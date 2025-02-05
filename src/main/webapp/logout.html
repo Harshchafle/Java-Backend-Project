@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log out</title>
+    <style>
+        body {
+    font-family: sans-serif; /* Choose a modern font */
+    background-color: #f4f4f4; /* Light background color */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    margin: 0; /* Remove default margins */
+}
+
+.container {
+    background-color: #fff; /* White container background */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Add a subtle shadow */
+    text-align: center; /* Center text within the container */
+    width: 350px; /* Set a maximum width for the container */
+}
+
+h2 {
+    color: #333; /* Dark heading color */
+    margin-bottom: 20px; /* Add some spacing below the heading */
+}
+
+.buttons {
+    margin-top: 20px; /* Add spacing above the buttons */
+}
+
+button {
+    padding: 12px 25px; /* Adjust padding for button size */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transitions */
+    margin: 0 10px; /* Space between buttons */
+}
+
+button[type="submit"] {
+    background-color: #d9534f; /* Red (danger) color for logout */
+    color: white;
+}
+
+button[type="button"] {
+    background-color: #5cb85c; /* Green (success) color for cancel */
+    color: white;
+}
+
+
+button:hover {
+    transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+button[type="submit"]:hover {
+    background-color: #c9302c; /* Darker red on hover */
+}
+
+button[type="button"]:hover {
+    background-color: #4cae4c; /* Darker green on hover */
+}
+
+/* Optional: Add some responsive styling */
+@media (max-width: 400px) { /* Adjust breakpoint as needed */
+    .container {
+        width: 90%; /* Make container take up more width on smaller screens */
+        padding: 20px;
+    }
+
+    button {
+        padding: 10px 20px; /* Slightly smaller buttons */
+        font-size: 15px;
+        margin: 10px 5px; /* Adjust button margins */
+        display: block; /* Buttons Stack on smaller screens */
+        width: 100%; /* Buttons take full width */
+
+    }
+}
+
+    </style>
+</head>
+<body>
+<div class="container">
+    <form action="logout">
+        <h2>Log Out</h2><br><br>
+        <div class="buttons">
+            <a href="home.jsp"><button type="button"> Cancel </button></a>
+            <button type="submit"> Log out </button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

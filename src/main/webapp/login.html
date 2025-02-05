@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure full viewport height */
+            margin: 0; /* Remove default body margin */
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            width: 350px; /* Adjust width as needed */
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333; /* Darker heading color */
+        }
+
+        label {
+            display: block; /* Make labels stack nicely */
+            margin-bottom: 5px;
+            color: #555; /* Slightly darker label color */
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: calc(100% - 12px); /* Full width with padding adjustment */
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box; /* Include padding in width calculation */
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #007bff; /* Highlight on focus */
+            outline: none;
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.2); /* Subtle shadow on focus */
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%; /* Full width button */
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        button:focus{
+            outline: none; /* Remove default focus outline */
+            box-shadow: 0 0 5px rgba(0, 123, 255, 0.3); /* Add a subtle shadow on focus */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>User Login</h1>
+        <form action="login" method="get">
+            <label for="userName">USERNAME :
+                <input type="text" name="userName" id="userName" placeholder="Enter user name here"/><br><br>
+            </label>
+
+            <label for="password">Password :
+                <input type="password" name="password" id="password" placeholder="******"/><br><br>
+            </label>
+
+            <label for="submit">
+                <button id="submit">login</button>
+            </label>
+
+        </form>
+    </div>
+</body>
+</html>
